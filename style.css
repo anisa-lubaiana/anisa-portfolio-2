@@ -1,0 +1,332 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url("Cute-Edgy-1.jpg");
+    }
+
+    h1 {
+      font-size: 55px;
+      color: rgb(226, 218, 218);
+      font-family: fantasy;
+      text-align: center;
+    }
+    h2 {
+      font-size: 45px;
+      color: rgb(112, 14, 14);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
+    h3 {
+      font-size: 18px;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul, p {
+      font-size: 20px;
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    strong {
+      color: rgb(112, 14, 14);
+      font-size: larger;
+    }
+
+    
+    nav {
+      position: fixed;   
+      top: 0;            
+      left: 0;
+      width: 100%;       
+      padding: 1px;
+      z-index: 1000;    
+      display: flex; 
+      justify-content: center;
+      background-color: #a09696;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e0c0c0;
+    }
+
+    
+    header {
+      background-color: #56859e;
+      color: white;
+      padding: 100px 0 50px 0;
+      text-align: center;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 50px;
+    }
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 80%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+    .hero h2 {
+      margin: 10px 0;
+      color: #ffe6f0;
+    }
+    .hero p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .hero .btns {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero .btns a {
+      padding: 12px 25px;
+      background-color: #9b091c;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition:  0.3s, transform 0.3s;
+    }
+    .hero .btns a:hover {
+      background-color: #721749;
+      transform: translateY(-3px);
+    }
+    .hero .socials a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+    .hero .socials a:hover {
+      color: #ffd1dc;
+    }
+
+    #about {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 40px auto;
+      background-image: radial-gradient(circle, #3c6067 1px, transparent .3px);
+      background-size: 40px 40px;
+    }
+    #about h2 {
+      color: #800000;
+      margin-bottom: 10px;
+    }
+    #about p, #about li {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .timeline {
+      margin-top: 20px;
+      border-left: 4px solid #9b091c;
+      padding-left: 20px;
+    }
+    .timeline li {
+      margin-bottom: 10px;
+    }
+
+    #projects {
+      background: #f7f7f7;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .project-card {
+      background: #810505;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s;
+    }
+    .project-card a{
+        color: #ebd6ec;
+        border: 1px solid rgb(218, 172, 218);
+        border-radius: 5px;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 40px rgba(0,0,0,0.2);
+      background-color: #3d6079;
+    }
+    .project-card .badges span {
+      background-color: #1c0306;
+      color: #fff;
+      padding: 4px 8px;
+      margin: 2px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      display: inline-block;
+    }
+    #projects h2 {
+  background: rgb(148, 92, 148);          
+  color: #fdf5f5;               
+  padding: 15px 25px;        
+  border-radius: 10px;        
+  display: inline-block;    
+  margin-bottom: 20px;   
+  border:2px solid white  ;    
+    }
+
+    #skills {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    #skills,#projects{
+        background-image: url("https://i.pinimg.com/originals/7a/a5/fc/7aa5fc10bfc9dea96733b41a5ab90bee.jpg");
+        background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    #skills h2 {
+      
+  background: pink;          
+  color: #032b51;               
+  padding: 10px 20px;        
+  border-radius: 10px;        
+  display: inline-block;    
+  margin-bottom: 20px;   
+  border:2px solid white ;
+  font-size:600; 
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .skill-card {
+      background: #cf4c80;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+      background-color: #97b0bc;
+    }
+    .progress-bar {
+      background: #ddd;
+      border-radius: 8px;
+      height: 15px;
+      margin: 10px 0;
+    }
+    .progress {
+      height: 100%;
+      border-radius: 8px;
+      background-color: #9b091c;
+      width: 0;
+    }
+
+    
+    #contact {
+      background: #f9f9f9;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .contact-info input,
+    .contact-info textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact-info button {
+      background: #9b091c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact-info button:hover {
+      background: #4e042d;
+    }
+    .contact-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .contact-card {
+      background: #5a7eb0;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.4s ease;
+      
+    }
+    .contact-card:hover {
+      transform: translateY(-6px);
+      background-color: #9c2554;
+    }
+    .contact-card strong {
+      color: #2a0228;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .contact-cards a{
+color: aqua;
+    }
+    footer {
+      background-color: #610404;
+      text-align: center;
+      padding: 10px 0;
+    }
+    footer h3 {
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .projects-container, .skills-container, .contact-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      body {
+        font-size: 16px;
+      }
+    }
+    .quote{
+        color: #6c6a6a;
+        background-color: #eae4e4;
+        border-radius: 9px;
+    }
+    html{
+        scroll-behavior: smooth ;
+    }
