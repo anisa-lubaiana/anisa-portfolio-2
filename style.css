@@ -7,13 +7,13 @@ body {
 
     h1 {
       font-size: 55px;
-      color: rgb(226, 218, 218);
+      color:rgb(138, 17, 17);
       font-family: fantasy;
       text-align: center;
     }
     h2 {
       font-size: 45px;
-      color: rgb(112, 14, 14);
+      color: rgb(103, 31, 31);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     } 
     h3 {
@@ -245,66 +245,93 @@ body {
       width: 0;
     }
 
-    
-    #contact {
-      background: #f9f9f9;
-      padding: 40px;
-      border-radius: 12px;
-      max-width: 900px;
-      margin: 40px auto;
-      text-align: center;
-    }
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 30px;
-    }
-    .contact-info input,
-    .contact-info textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .contact-info button {
-      background: #9b091c;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .contact-info button:hover {
-      background: #4e042d;
-    }
-    .contact-cards {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .contact-card {
-      background: #5a7eb0;
-      border-radius: 12px;
-      padding: 20px;
-      width: 250px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, background-color 0.4s ease;
-      
-    }
-    .contact-card:hover {
-      transform: translateY(-6px);
-      background-color: #9c2554;
-    }
-    .contact-card strong {
-      color: #2a0228;
-      display: block;
-      margin-bottom: 8px;
-    }
-    .contact-cards a{
-color: aqua;
-    }
+#contact {
+  background-color: #b9deeb;   
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;         
+  max-width: 500px;            
+  margin: 40px auto;           
+  box-shadow: 0 4px 10px rgba(250, 244, 244, 0.1); 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contact h2 {
+  font-size: 40px;             
+  color: #0c4963;              
+  margin-bottom: 20px;
+
+}
+#contact:hover{
+  background-color: #d99cbe;
+}
+#contact input, 
+#contact textarea {
+  width: 90%;                
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;         
+  border: 1px solid #ccc;
+  font-size: 14px;           
+}
+
+#contact button {
+  background-color: #eec890;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;        
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin:20px;;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #fe6142;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#contact button:active {
+  background-color: #d9b67f;
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Contact cards  horizontal */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;   /* pashapashi */
+}
+
+.contact-card {
+  background: #30507c;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  background-color: #9c2554;
+}
+
+.contact-card strong {
+  color: #ffeeee;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-cards a {
+  color: aqua;
+}
+  
     footer {
       background-color: #610404;
       text-align: center;
